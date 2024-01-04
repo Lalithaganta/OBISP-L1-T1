@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>vegetable Shop Landing Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-content-div">
+        <a href="#home-sec">
+          <img
+            src="logo.png"
+            alt="Company Logo"
+            id="header-img"
+        ></a>
+        <nav id="nav-bar">
+          <a href="#about" class="nav-link">ABOUT</a>
+          <a href="#Vegetables" class="nav-link">VEGETABLES</a>
+          <a href="#our-service" class="nav-link">OUR SERVICE</a>
+          <a href="#contact" class="nav-link">CONTACT US!</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="home-sec" class="flexible home-sec">
+        <div class="eye-grabber-img">
+          <img src="img.jpg" alt="Image of vegetables" />
+        </div>
+        <div class="eye-grabber">
+          <h1>Fresh Vegetables Available!</h1>
+          <h2>
+            100% Organic
+          </h2>
+          <button class="btn" onclick="window.location.href = '#contact';">
+            Buy Now
+          </button>
+        </div>
+      </section>
+      <section id="about" class="sec-padding">
+        <h3 class="section-heading">ABOUT US</h3>
+        <div class="sec-content-div flexible">
+          <p>
+            The formation of a vegetable begins with a few cells responding to light signals,
+            rapidly growing and establishing a plant base. As the root and stem tips elongate, 
+            the vegetable transitions from a seedling to a seedling plant. A meristematic region
+            at the tip ensures ongoing growth and cell division, differentiating into specialized
+            cells for transport and storage. Roots anchor the plant, providing stability, while 
+            leaf tips initiate photosynthesis. Further leaf unfurling creates a protective canopy,
+            aided by a symbiotic relationship with microorganisms for nutrient uptake, contributing
+            to the overall health and stability of the vegetable.
+          </p>
+          <img src="about.jpg" alt="A man holding Vegetables with basket" />
+        </div>
+      </section>
+      <section id="Vegetables" class="sec-padding">
+        <h3 class="section-heading">VEGETABLES</h3>
+        <div class="sec-content-div flexible">
+          <div class="tile">
+            <img src="vegetables/beetroot.jpeg" alt="photo of beetroot" />
+            <h4>Beetroot</h4>
+            <p>
+                A vibrant, nutrient-rich root vegetable known for its purple hue,
+                offering both visual appeal and a sweet earthy flavor in dishes.
+            </p>
+          </div>
+          <div class="tile">
+            <img
+              src="vegetables/brinjal.jpeg"
+              alt="photo of brinjal"
+            />
+            <h4>Brinjal</h4>
+            <p>
+                A versatile, low-calorie vegetable with a spongy texture, 
+                absorbing flavors effortlessly in various cuisines etc.
+            </p>
+          </div>
+          <div class="tile">
+            <img src="vegetables/tomoto.jpeg" alt="photo of tomato" />
+            <h4>Tomatos</h4>
+            <p>
+                Botanically a fruit, tomatoes are kitchen essentials with a juicy 
+                texture and acidity, providing freshness and tangy notes in sauces etc.
+            </p>
+          </div>
+          <div class="tile">
+            <img src="vegetables/potato.jpeg" alt="photo potato" />
+            <h4>Potato</h4>
+            <p>
+                Humble and nutritious tubers that serve as a global comfort food, 
+                offering energy and essential nutrients through mashed, baked, fried etc.
+            </p>
+          </div>
+          <div class="tile">
+            <img src="vegetables/mushroom.jpeg" alt="photo of mushroom" />
+            <h4>Mushroom</h4>
+            <p>
+                Fungi with a unique umami flavor, mushrooms are low in calories and versatile, 
+                serving as a meat substitute in diverse dishes when sautéed, grilled etc.
+            </p>
+          </div>
+          <div class="tile">
+            <img src="vegetables/cabbage.jpeg" alt="photo of cabbage" />
+            <h4>Cabbage</h4>
+            <p>
+                A cruciferous vegetable with crisp leaves, cabbage is rich in vitamins and fiber, 
+                contributing to digestive health.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="our-service" class="sec-padding">
+        <h3 class="section-heading">OUR SERVICE</h3>
+        <div class="sec-content-div">
+          <div class="bars">
+            <div class="icon-container">
+              <img src="https://i.ibb.co/w6H542X/Fresh.png" alt="" />
+            </div>
+            <div class="txt-container">
+              <h5>Fresh</h5>
+              <p>We deliver fresh Vegetables with a 100% guarantee of freshness.</p>
+            </div>
+          </div>
+          <div class="bars">
+            <div class="icon-container">
+              <img src="https://i.ibb.co/FKNq4Qr/delivered.png" alt="" />
+            </div>
+            <div class="txt-container">
+              <h5>Fast</h5>
+              <p>
+                We deliver your orders as fast as possible, delivery procedure
+                begins as soon as vegetables Harvesting.
+              </p>
+            </div>
+          </div>
+          <div class="bars">
+            <div class="icon-container">
+              <img src="https://i.ibb.co/HHQK1wV/happy.png" alt="" />
+            </div>
+            <div class="txt-container">
+              <h5>Satisfying</h5>
+              <p>
+                We ensure complete customer satisfaction, striving to ensure a seamless purchasing experience.
+                 In the rare event of any mishap, rest assured you will be duly compensated for any inconvenience caused.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+      <section class="sec-padding" id="contact">
+        <h3 class="section-heading">CONTACT</h3>
+        <div class="sec-content-div flexible">
+          <h6>To initiate a purchase or seek further elucidation, kindly engage in communication with us.</h6>
+          <form
+            id="form"
+            action="https://www.freecodecamp.com/email-submit"
+            method="POST"
+          >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your Email Address"
+              required
+            />
+            <input type="submit" class="btn" id="submit" value="Discover" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>copy Rights
+      <a href="#">© fresh 2023. All Rights Reserved.</a>
+    </footer>
+  </body>
+</html>
